@@ -8,7 +8,7 @@ nm-applet &
 
 # Prevent multiple executions of the pa-applet binary.
 if pgrep -x "pa-applet" > /dev/null; then    
-    exit 1
+	exit 1
 fi
 
 # Pulseaudio
