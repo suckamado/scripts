@@ -14,9 +14,9 @@ chosen="$(echo -e "$options" | $rofi_command -p " Encerrar " -dmenu -selected-ro
 
 case $chosen in
     $shutdown)
-    	doas /sbin/shutdown -h now
+    	doas /usr/bin/shutdown -h now
 	;;
     $reboot)
-    	doas /sbin/shutdown -r now
+    	doas /usr/bin/shutdown -r now
         ;;
 esac

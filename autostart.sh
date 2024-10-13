@@ -5,15 +5,7 @@ xrandr --output eDP1 --mode 1366x768 --pos 1920x312 --rotate normal --output DP1
 
 # NetowrkManager applet
 nm-applet &
-
-# Pulseaudio applet and prevent this binary duplicate volume icon
-if pgrep -x "pa-applet" > /dev/null; then    
-	exit 1
-fi
-
-# Pulseaudio
 pa-applet &
-
 # Restore wallpaper
 nitrogen --restore &
 
