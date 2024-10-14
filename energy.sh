@@ -10,7 +10,7 @@ reboot="Reinciar"
 # Variable passed to rofi
 options="$shutdown\n$reboot"
 
-chosen="$(echo -e "$options" | $rofi_command -p " Encerrar " -dmenu -selected-row 2)"
+chosen="$(echo -e "$options" | $rofi_command -p " Energia " -dmenu -selected-row 2)"
 
 case $chosen in
     $shutdown)
